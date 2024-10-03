@@ -1,0 +1,474 @@
+:root{
+    --color-purple: #8c48bf;
+    --color-light-purple: #dcc8ed;
+    --color-gray: #1e1e26;
+    --color-black: #1e1e26;
+    --color-white: #ffffff;
+    --color-dark-blue: #242e52;
+    --color-light-blue: #3cdcf2;
+    --font-paragraph: "Fredoka", sans-serif;
+    --font-titles: "Roboto", sans-serif;
+    --size-paragraph: 1.5em;
+}
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*Estilos del header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 90px;
+    padding: 30px;
+}
+
+.nav_laptop ul {
+    display: none;
+}
+
+.nav_laptop li, a {
+    color: var(--color-black);
+    font-family: var(--font-paragraph);
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+#hamburguer-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#contact-header {
+    display: none;
+    box-shadow: 2px 2px 5px rgb(197, 196, 196), -2px 2px 5px rgb(197, 196, 196) ;
+}
+
+.contact {      /*botones de contact*/
+    height: 35px;
+    padding: 0px 30px;
+    background-color: var(--color-purple);
+    border: none;
+    border-radius: 20px;
+    color: var(--color-white);
+    font-family: var(--font-paragraph);
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/*Estilos primera sección*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    text-align: right;
+    text-wrap: balance;
+}
+
+h1 {
+    font-family: var(--font-titles);
+    font-size: 5.0em;
+    color: var(--color-dark-blue);
+}
+
+.intro img {
+    width: 100%;
+}
+
+.intro div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.intro p {
+    font-family: var(--font-paragraph);
+    font-size: var(--size-paragraph);
+    font-weight: 500;
+}
+
+#contact-main {
+    align-self: flex-end;
+}
+
+/*Estilo segunda sección*/
+
+.differences {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--color-light-blue);
+    padding: 30px;
+}
+
+h2 {
+    color: var(--color-white);
+    font-family: var(--font-titles);
+    font-size: 2.5em;
+}
+
+.differences p {
+    color: var(--color-white);
+    font-family: var(--font-paragraph);
+    font-size: var(--size-paragraph);
+    font-weight: 500;
+}
+
+/*Estilos tercera sección*/
+
+.container-articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    font-family: var(--font-paragraph);
+}
+
+.container-articles, .opiniones article {
+    width: 100%;
+    font-size: var(--size-paragraph);
+}
+
+.container-articles div {
+    position: relative;
+    background-color: var(--color-light-purple);
+    height: 38px;
+    margin: 0px -30px 25px 15px;
+    padding: 10px;
+}
+
+.container-articles span {
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 60px;
+    padding: 10px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 22px;
+}
+
+h3 {
+    display: inline-block;
+    color: #242e52;
+    padding-left: 40px;
+    white-space: nowrap;
+}
+
+.container-articles, .opiniones p {
+    color: rgb(185, 185, 185);
+}
+
+/*Estilos cuarta sección*/
+
+.best-of-month h2 {
+    width: 100%;
+    color: var(--color-gray);
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.opiniones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /*con este centro botón*/
+    flex-wrap: wrap;
+    gap: 0px;
+    padding: 30px;
+    font-family: var(--font-paragraph);
+}
+
+.opiniones article {
+    position: relative;
+    background-color:rgb(253, 250, 250);
+    margin-bottom: 50px;
+    padding: 70px 30px 30px;
+}
+
+.opiniones img {
+    position: absolute;
+    left: calc(50% - 35px);
+    top:-35px;
+}
+
+.opiniones h3 {
+    display: block;
+    color: #242e52;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 0;
+}
+
+#container-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+
+.more {      /*boton de more*/
+    height: 35px;
+    padding: 0px 30px;
+    background-color: var(--color-purple);
+    border: none;
+    border-radius: 20px;
+    color: var(--color-white);
+    font-family: var(--font-paragraph);
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/*Estilos quinta sección*/
+
+.get-to-know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /*con este centro botón*/
+    gap: 30px;
+    background-color: var(--color-light-blue);
+    padding: 30px;
+}
+
+.get-to-know h2 {
+    text-wrap: balance;
+    text-align: center;
+}
+
+#go-for-it {
+    height: 35px;
+    padding: 0px 30px;
+    background-color: var(--color-dark-blue);
+    border: none;
+    border-radius: 20px;
+    color: var(--color-white);
+    font-family: var(--font-paragraph);
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    box-shadow: 1px 1px 5px rgb(92, 88, 88), -1px 1px 5px rgb(92, 88, 88);
+}
+
+/*Estilos footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--color-gray);
+    padding: 30px;
+}
+
+.barra-buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+input {
+    height: 40px;
+    width: 60%;
+    margin-right: 6px;
+    padding-left: 10px;
+    border-radius: 22px;
+    border: none;
+    color: rgb(92, 88, 88);
+    font-weight: 500;
+}
+
+#go {
+    height: 35px;
+    padding: 0px 20px;
+    background-color: var(--color-purple);
+    border: none;
+    border-radius: 20px;
+    color: var(--color-white);
+    font-family: var(--font-paragraph);
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+footer ul li{
+    padding: 8px;
+    color:var(--color-white);
+    list-style-type: none;
+    font-family: var(--font-paragraph);
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.container-social-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.container-socials img {
+    height: 17px;
+}
+
+#logo-white {
+    height: 35px;
+}
+
+footer p {
+    color:rgb(165, 161, 161);
+    font-family: var(--font-paragraph);
+    font-size: 1.1em;
+}
+
+@media (min-width: 768px){
+
+    header {
+        justify-content: center;
+    }
+    
+    #hamburguer-icon {
+        display: none;
+    }
+
+    .nav_laptop ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        gap: 20px;
+    }
+
+    #contact-header {
+        display: inline-block; 
+    }
+
+    .intro {
+        flex-direction: row;
+    }
+
+    .intro img {
+        width: 50%;
+        align-self: flex-start;
+    }
+
+    .differences {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var(--color-purple);
+    }
+
+    .differences p, h2 {
+        width: 50%;
+    }
+
+    .container-articles{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .container-articles article {
+        width: 40%;
+    }
+
+    .container-articles div {
+        background-color: var(--color-white);
+    }
+
+    .container-articles p {
+        padding-left: 66px;
+    }
+
+    .opiniones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .opiniones article {
+        width: 30%;
+    }
+
+    .get-to-know {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-purple);
+    }
+
+    #go-for-it {
+        background-color: var(--color-white);
+        color: var(--color-purple);
+        font-weight: 400;
+    }
+
+    .get-to-know h2 {
+        text-align: left;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: start;
+        gap: 50px;
+    }
+
+    footer p {
+        position: absolute;
+        right: 10%;
+        order: -1;
+        align-self: self-end;
+        white-space: nowrap;
+    }
+
+    .barra-buscar {
+        width: 50%;
+    }
+
+    .container-content {
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    .container-social-logo {
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .container-socials {
+        gap: 10px;
+    }
+}
